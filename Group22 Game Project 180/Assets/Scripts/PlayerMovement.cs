@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     public int speed = 1;
     private Rigidbody rigid_body;
-    public float jump_force = 100;
+    
     public bool isGrounded;
     public Text countText;
     public Text winText;
@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     public int fallDepth;
     private Vector3 startPosition;
     public float stunTimer;
+    public GameObject shockWave;
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,27 +36,24 @@ public class PlayerMovement : MonoBehaviour
         count = 0;
         winText.text = "";
         SetCountText();
+        shockWave.SetActive(false);
+
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         Movejump();
-    // Shoots beam at ground to check if ground is actrually there
-       RaycastHit hit; 
-       if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, 1.5f))
-        {
-            isGrounded = true;
-        }
-        else
-        {
-            isGrounded = false;
-        }
-        if (Input.GetKey("space")&& isGrounded)
-        {
-            rigid_body.AddForce(Vector3.up * jump_force);
-        }
+        // Shoots beam at ground to check if ground is actrually there
 
+        if (Input.GetKeyDown("space"))
+        {
+            shockWave.SetActive(true);
+        }
+        else if (Input.GetKeyUp("space"))
+        {
+            shockWave.SetActive(false);
+        }
     }
 
  //the Fixed jump moved into its own funtion 
@@ -70,10 +69,15 @@ public class PlayerMovement : MonoBehaviour
         {
             add_position += Vector3.right * Time.deltaTime * speed;
         }
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKey("w"))
         {
-            rigid_body.AddForce(Vector3.up * jump_force);
+            add_position += Vector3.forward * Time.deltaTime * speed;
         }
+        if (Input.GetKey("s"))
+        {
+            add_position += Vector3.back * Time.deltaTime * speed;
+        }
+      
         GetComponent<Transform>().position += add_position;
 
         if(transform.position.y < fallDepth)

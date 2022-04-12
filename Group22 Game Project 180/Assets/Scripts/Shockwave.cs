@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Laser_Shot : MonoBehaviour
+public class Shockwave : MonoBehaviour
 {
 public float speed;
 public bool goingLeft;
