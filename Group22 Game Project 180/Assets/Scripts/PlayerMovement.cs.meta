@@ -3,7 +3,12 @@ guid: b477f875b3268c34d9ac8f928b2804c5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - countText: {instanceID: 0}
+  - winText: {instanceID: 0}
+  - livesText: {instanceID: 0}
+  - gameOverText: {instanceID: 0}
+  - shockWave: {fileID: 4900378705505344302, guid: 44ba33ffefd569943b6df4ecb718ed99, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

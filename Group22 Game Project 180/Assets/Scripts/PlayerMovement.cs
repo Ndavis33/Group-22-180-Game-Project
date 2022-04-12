@@ -50,10 +50,7 @@ public class PlayerMovement : MonoBehaviour
         {
             shockWave.SetActive(true);
         }
-        else if (Input.GetKeyUp("space"))
-        {
-            shockWave.SetActive(false);
-        }
+       
     }
 
  //the Fixed jump moved into its own funtion 
