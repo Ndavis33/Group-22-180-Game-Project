@@ -30,13 +30,14 @@ public class PlayerMovement : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    { 
+        shockWave.SetActive(false);
         startPosition = transform.position;
         rigid_body = GetComponent<Rigidbody>();
         count = 0;
         winText.text = "";
         SetCountText();
-        shockWave.SetActive(false);
+       
 
     }
 
@@ -46,10 +47,6 @@ public class PlayerMovement : MonoBehaviour
         Movejump();
         // Shoots beam at ground to check if ground is actrually there
 
-        if (Input.GetKeyDown("space"))
-        {
-            shockWave.SetActive(true);
-        }
        
     }
 
@@ -75,12 +72,23 @@ public class PlayerMovement : MonoBehaviour
             add_position += Vector3.back * Time.deltaTime * speed;
         }
       
+        if (Input.GetKeyDown("space"))
+        {
+            StartCoroutine(Shock());
+        }
         GetComponent<Transform>().position += add_position;
 
         if(transform.position.y < fallDepth)
         {
             Respawn();
         }
+    }
+
+    IEnumerator Shock()
+    {
+        shockWave.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        shockWave.SetActive(false);
     }
 
     // Respawn function
