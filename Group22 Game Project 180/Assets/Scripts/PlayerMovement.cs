@@ -87,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator Shock()
     {
         shockWave.SetActive(true);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
         shockWave.SetActive(false);
     }
 
