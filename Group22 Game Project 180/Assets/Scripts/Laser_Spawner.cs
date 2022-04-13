@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Laser_Spawner : MonoBehaviour
 {
+    /*
     [Header("Projectile Variables")]
     public bool grounded
     [Header("Spawner Variables")]
@@ -27,4 +28,7 @@ public class Laser_Spawner : MonoBehaviour
             shock.GetComponent<Shockwave>().goingLeft = goingLeft;
         }
     }
+    */
 }
+  
+   

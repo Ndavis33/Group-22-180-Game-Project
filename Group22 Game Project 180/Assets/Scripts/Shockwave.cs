@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class Shockwave : MonoBehaviour
 {
-public float speed;
-public bool goingLeft;
+    public float speed;
+    public bool goingLeft;
     // Start is called before the first frame update
   
 
     // Update is called once per frame
    void Update()
-    {
+   {
        if (goingLeft == true)
        {
               transform.position += speed* Vector3.left * Time.deltaTime;
        }
-    }
+   }
 }
