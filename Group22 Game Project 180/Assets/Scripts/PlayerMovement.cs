@@ -130,14 +130,23 @@ public class PlayerMovement : MonoBehaviour
           
 
         }
-        if(other.gameObject.tag == "Hazard")
+        if (other.tag == "Scene 1")
         {
-            Respawn();
+            Scene_Switch.instance.switchScene(1);
         }
-        if(other.gameObject.tag == "DrippingIce")
+        if (other.tag == "Scene 2")
         {
-            Respawn();
+            Scene_Switch.instance.switchScene(2);
         }
+        if (other.tag == "Scene 3")
+        {
+            Scene_Switch.instance.switchScene(3);
+        }
+        if (other.tag == "Boss Scene")
+        {
+            Scene_Switch.instance.switchScene(4);
+        }
+
         if (other.tag == "Laser")
         {
             StartCoroutine(Stun());

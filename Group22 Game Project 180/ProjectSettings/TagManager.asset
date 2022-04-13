@@ -6,6 +6,13 @@ TagManager:
   tags:
   - ground
   - shockwave
+  - Green Key
+  - Wall
+  - Green Door
+  - Scene 1
+  - Scene 2
+  - Scene 3
+  - Boss Scene
   layers:
   - Default
   - TransparentFX
