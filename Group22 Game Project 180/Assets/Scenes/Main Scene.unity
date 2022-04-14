@@ -1116,11 +1116,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157794695}
   m_CullTransparentMesh: 1
---- !u!1 &1300099990 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8287089559701119148, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
-  m_PrefabInstance: {fileID: 5069439881653207921}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1345660174
 GameObject:
   m_ObjectHideFlags: 0
@@ -2091,10 +2086,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1457804599}
     - target: {fileID: 5069439882500687648, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
-      propertyPath: Shockwave
-      value: 
-      objectReference: {fileID: 4725687336402576930, guid: 44ba33ffefd569943b6df4ecb718ed99, type: 3}
-    - target: {fileID: 5069439882500687648, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
       propertyPath: countText
       value: 
       objectReference: {fileID: 540740603}
@@ -2106,14 +2097,6 @@ PrefabInstance:
       propertyPath: livesText
       value: 
       objectReference: {fileID: 1157794697}
-    - target: {fileID: 5069439882500687648, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
-      propertyPath: shockWave
-      value: 
-      objectReference: {fileID: 1300099990}
-    - target: {fileID: 5069439882500687648, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
-      propertyPath: shockwave
-      value: 
-      objectReference: {fileID: 4900378705505344302, guid: 44ba33ffefd569943b6df4ecb718ed99, type: 3}
     - target: {fileID: 5069439882500687648, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
       propertyPath: gameOverText
       value: 
@@ -2165,18 +2148,6 @@ PrefabInstance:
     - target: {fileID: 5069439882500687677, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5069439882500687677, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7792573885133923218, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
-      propertyPath: m_Name
-      value: Shockwave
-      objectReference: {fileID: 0}
-    - target: {fileID: 8897627202880448791, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}

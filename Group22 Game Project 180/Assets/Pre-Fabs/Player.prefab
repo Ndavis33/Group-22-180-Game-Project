@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 5069439882500687651}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,11 +190,13 @@ MonoBehaviour:
   lives: 3
   fallDepth: 0
   stunTimer: 0
-  shockWave: {fileID: 3074285709147430936, guid: 44ba33ffefd569943b6df4ecb718ed99, type: 3}
-  delayTime: 0
-  redDoor: {fileID: 0}
-  blueDoor: {fileID: 0}
-  greenDoor: {fileID: 0}
+  shockWave: {fileID: 8287089559701119148}
+  redDelay: 2
+  greenDelay: 6.5
+  blueDelay: 8.5
+  redDoor: {fileID: 4242152125915020113, guid: 52825453898226f48ad65c0030091788, type: 3}
+  blueDoor: {fileID: 3671961435034326042, guid: e79d0b6d0b86ca6478a269a60386eb92, type: 3}
+  greenDoor: {fileID: 5369676544039858880, guid: 0c71dff476966174f877ca79090ab517, type: 3}
 --- !u!136 &5069439882500687676
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -280,8 +282,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shockwave
       objectReference: {fileID: 0}
+    - target: {fileID: 3074285709147430936, guid: 44ba33ffefd569943b6df4ecb718ed99, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44ba33ffefd569943b6df4ecb718ed99, type: 3}
+--- !u!1 &8287089559701119148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3074285709147430936, guid: 44ba33ffefd569943b6df4ecb718ed99, type: 3}
+  m_PrefabInstance: {fileID: 6461441280883785908}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8659278441648120350 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2414009945834775210, guid: 44ba33ffefd569943b6df4ecb718ed99, type: 3}
