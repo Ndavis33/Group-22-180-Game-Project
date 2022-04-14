@@ -191,6 +191,10 @@ MonoBehaviour:
   fallDepth: 0
   stunTimer: 0
   shockWave: {fileID: 3074285709147430936, guid: 44ba33ffefd569943b6df4ecb718ed99, type: 3}
+  delayTime: 0
+  redDoor: {fileID: 0}
+  blueDoor: {fileID: 0}
+  greenDoor: {fileID: 0}
 --- !u!136 &5069439882500687676
 CapsuleCollider:
   m_ObjectHideFlags: 0
