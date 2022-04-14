@@ -26,6 +26,12 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 startPosition;
     public float stunTimer;
     public GameObject shockWave;
+    public float redDelay;
+    public float greenDelay;
+    public float blueDelay;
+    public GameObject redDoor;
+    public GameObject blueDoor;
+    public GameObject greenDoor;
 
 
     // Start is called before the first frame update
@@ -130,6 +136,22 @@ public class PlayerMovement : MonoBehaviour
           
 
         }
+
+        if(other.gameObject.tag == "red button")
+        {
+            StartCoroutine(doorDelayRed());
+        }
+
+        if (other.gameObject.tag == "green button")
+        {
+            StartCoroutine(doorDelayGreen());
+        }
+
+        if (other.gameObject.tag == "blue button")
+        {
+            StartCoroutine(doorDelayBlue());
+        }
+
         if (other.tag == "Scene 1")
         {
             Scene_Switch.instance.switchScene(1);
@@ -181,9 +203,30 @@ public class PlayerMovement : MonoBehaviour
         speed = currentPlayerSpeed;
     }
 
+    IEnumerator doorDelayRed()
+    {
+        redDoor.gameObject.SetActive(false);
+        yield return new WaitForSeconds(redDelay);
+        redDoor.gameObject.SetActive(true);
+    }
+
+    IEnumerator doorDelayGreen()
+    {
+        greenDoor.gameObject.SetActive(false);
+        yield return new WaitForSeconds(greenDelay);
+        greenDoor.gameObject.SetActive(true);
+    }
+
+    IEnumerator doorDelayBlue()
+    {
+        blueDoor.gameObject.SetActive(false);
+        yield return new WaitForSeconds(blueDelay);
+        blueDoor.gameObject.SetActive(true);
+    }
 
 
 
-   
+
+
 
 }
