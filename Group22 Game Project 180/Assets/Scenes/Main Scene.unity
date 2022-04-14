@@ -2091,7 +2091,7 @@ PrefabInstance:
       objectReference: {fileID: 540740603}
     - target: {fileID: 5069439882500687648, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
       propertyPath: fallDepth
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5069439882500687648, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
       propertyPath: livesText
