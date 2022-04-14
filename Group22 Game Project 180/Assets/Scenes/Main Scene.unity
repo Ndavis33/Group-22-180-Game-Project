@@ -1637,7 +1637,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5069439882500687677, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
       propertyPath: m_TagString
-      value: shockwave
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7792573885133923218, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
       propertyPath: m_Name
