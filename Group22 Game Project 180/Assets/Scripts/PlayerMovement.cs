@@ -158,8 +158,8 @@ public class PlayerMovement : MonoBehaviour
     // shows the text on the UI
     void SetCountText()
     {
-        countText.text = "Count: " + count.ToString();
-        livesText.text = "Lives: " +lives.ToString();
+        countText.text = "Red Key: " + count.ToString();
+        livesText.text = "Hearts: " +lives.ToString();
 
         if(lives <=0)
         {

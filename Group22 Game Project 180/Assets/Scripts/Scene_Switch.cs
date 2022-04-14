@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Scene_Switch : MonoBehaviour
 {
     public GameObject player;
-    public GameObject mainCamera;
+    
     public GameObject Canvas;
     public static Scene_Switch instance;
     // These are objects that wont be destroyed when the player travels to a new scene 
@@ -14,7 +14,7 @@ public class Scene_Switch : MonoBehaviour
     {
         instance = this;
         DontDestroyOnLoad(player);
-        DontDestroyOnLoad(mainCamera);
+        
         DontDestroyOnLoad(this.gameObject);
         DontDestroyOnLoad(Canvas);
     }
