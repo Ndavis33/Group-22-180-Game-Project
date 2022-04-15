@@ -20,6 +20,8 @@ TagManager:
   - blue button
   - red button
   - Enemy
+  - White Button
+  - Trap
   layers:
   - Default
   - TransparentFX

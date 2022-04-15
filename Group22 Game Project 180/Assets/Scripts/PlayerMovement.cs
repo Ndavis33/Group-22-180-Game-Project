@@ -147,7 +147,7 @@ public class PlayerMovement : MonoBehaviour
             Scene_Switch.instance.switchScene(4);
         }
 
-        if (other.tag == "Laser")
+        if (other.tag == "Trap")
         {
             StartCoroutine(Stun());
         }
