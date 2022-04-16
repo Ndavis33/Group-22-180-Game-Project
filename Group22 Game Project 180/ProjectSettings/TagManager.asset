@@ -22,6 +22,7 @@ TagManager:
   - Enemy
   - White Button
   - Trap
+  - Car
   layers:
   - Default
   - TransparentFX

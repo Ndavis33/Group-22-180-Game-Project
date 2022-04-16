@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMove : MonoBehaviour
+public class CarMove : MonoBehaviour
 {
-    public GameObject upPoint;
-    public GameObject downPoint;
-    private Vector3 upPos;
-    private Vector3 downPos;
+    public GameObject leftPoint;
+    public GameObject rightPoint;
+    private Vector3 LeftPos;
+    private Vector3 RightPos;
     public int speed;
     private bool goingUp;
     // Start is called before the first frame update
     void Start()
     {
-        upPos = upPoint.transform.position;
+        LeftPos = leftPoint.transform.position;
 
-        downPos = downPoint.transform.position;
+        RightPos = rightPoint.transform.position;
     }
 
     // Update is called once per frame
@@ -29,24 +29,24 @@ public class EnemyMove : MonoBehaviour
     {
         if(goingUp)
         {
-            if(transform.position.y >= upPos.y)
+            if(transform.position.x <= LeftPos.x)
             {
                 goingUp = false;
             }
             else
             {
-                transform.position += Vector3.up * Time.deltaTime * speed;
+                transform.position += Vector3.left * Time.deltaTime * speed;
             }
         }
         else
         {
-            if(transform.position.y <= downPos.y)
+            if(transform.position.x >= RightPos.x)
             {
                 goingUp = true;
             }
             else
             {
-                transform.position += Vector3.down * Time.deltaTime * speed;
+                transform.position += Vector3.right * Time.deltaTime * speed;
             }
         }
     }
