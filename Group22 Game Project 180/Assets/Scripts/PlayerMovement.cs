@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 /*
 *Author:[Davis, Nathan]
 *Date [03/23/2022
@@ -11,10 +12,12 @@ using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
+  [SerializeField] private Transform respawnPoint;
+    [SerializeField] private Transform player;
 
     public int speed = 1;
     private Rigidbody rigid_body;
-    
+    public GameObject Player;
     public bool isGrounded;
     public Text countText;
     public Text winText;
@@ -26,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 startPosition;
     public float stunTimer;
     public GameObject shockWave;
+    public bool spawnedPlayer;
+
 
 
     // Start is called before the first frame update
@@ -94,7 +99,9 @@ public class PlayerMovement : MonoBehaviour
     // Respawn function
     private void Respawn()
     {
-        transform.position = startPosition;
+        player.transform.position = respawnPoint.transform.position;
+
+
         lives--;
         SetCountText();
 
@@ -130,7 +137,20 @@ public class PlayerMovement : MonoBehaviour
           
 
         }
-        if (other.tag == "Scene 1")
+        if (other.gameObject.CompareTag("Car"))
+        {
+            Respawn();
+        }
+        if (other.tag == "main")
+        {
+            Scene_Switch.instance.switchScene(0);
+            GameObject.FindGameObjectWithTag("Player").SetActive(false);
+
+
+
+        }
+
+            if (other.tag == "Scene 1")
         {
             Scene_Switch.instance.switchScene(1);
         }
@@ -155,6 +175,9 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
+  
+   
+       
     // shows the text on the UI
     void SetCountText()
     {

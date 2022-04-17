@@ -23,6 +23,7 @@ TagManager:
   - White Button
   - Trap
   - Car
+  - main
   layers:
   - Default
   - TransparentFX

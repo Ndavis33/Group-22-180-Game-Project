@@ -181,7 +181,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b477f875b3268c34d9ac8f928b2804c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  respawnPoint: {fileID: 776539745280837939, guid: 35076981bedbbeb48bc296fc66b84452, type: 3}
+  player: {fileID: 5069439882500687649}
   speed: 10
+  Player: {fileID: 5069439882500687677}
   isGrounded: 0
   countText: {fileID: 0}
   winText: {fileID: 0}
@@ -191,12 +194,6 @@ MonoBehaviour:
   fallDepth: 0
   stunTimer: 0
   shockWave: {fileID: 8287089559701119148}
-  redDelay: 2
-  greenDelay: 6.5
-  blueDelay: 8.5
-  redDoor: {fileID: 4242152125915020113, guid: 52825453898226f48ad65c0030091788, type: 3}
-  blueDoor: {fileID: 3671961435034326042, guid: e79d0b6d0b86ca6478a269a60386eb92, type: 3}
-  greenDoor: {fileID: 5369676544039858880, guid: 0c71dff476966174f877ca79090ab517, type: 3}
 --- !u!136 &5069439882500687676
 CapsuleCollider:
   m_ObjectHideFlags: 0
