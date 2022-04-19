@@ -11,6 +11,7 @@ public class Scene_Switch : MonoBehaviour
     public GameObject Canvas;
     public static Scene_Switch instance;
     public GameObject Maincamera;
+  
     // These are objects that wont be destroyed when the player travels to a new scene 
     void Start()
     {
@@ -22,29 +23,19 @@ public class Scene_Switch : MonoBehaviour
     void Update()
     {
          instance = this;
+
        
-        
-       DontDestroyOnLoad(this.gameObject);
-         DontDestroyOnLoad(Maincamera);
-       
+        DontDestroyOnLoad(player);
+        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(Canvas);
       
-        if (!playerExists)
-        {
-            playerExists = true;
-            DontDestroyOnLoad(player);
-         
 
 
-        }
-        else
-        {
-            Destroy(gameObject);
-            Destroy(Canvas);
-            
-        }
     }
 
     // this function tells the script which scene to choose in the build scene area 
+
+ 
     public void switchScene(int sceneNumber)
     {
         SceneManager.LoadScene(sceneNumber);

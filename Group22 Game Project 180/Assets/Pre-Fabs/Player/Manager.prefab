@@ -45,3 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   Canvas: {fileID: 0}
+  Maincamera: {fileID: 0}
+  respawnPoint: {fileID: 4178999690148558021, guid: f911835c08a313d4c92dedfe28c073af, type: 3}
+  playerPreFab: {fileID: 0}

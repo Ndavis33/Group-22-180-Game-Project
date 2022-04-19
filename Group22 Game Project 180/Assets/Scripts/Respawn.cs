@@ -9,7 +9,12 @@ public class Respawn : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        player.transform.position = respawnPoint.transform.position;
+        if (other.CompareTag("Spawner"))
+        {
+            player.transform.position = respawnPoint.transform.position;
+            Physics.SyncTransforms();
+        }
+        
     }
 
 
