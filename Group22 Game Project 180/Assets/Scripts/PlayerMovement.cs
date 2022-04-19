@@ -205,7 +205,11 @@ public class PlayerMovement : MonoBehaviour
 
         if(lives <=0)
         {
-            gameOverText.text = "GameOver You Lose !";
+            gameOverText.text = "You Lose !";
+            Scene_Switch.instance.switchScene(4);
+          
+
+
             speed = 0;
         }
  
@@ -217,6 +221,7 @@ public class PlayerMovement : MonoBehaviour
                 if (Greenkeys >=1)
                 {
                     winText.text = "You Win!";
+                    Scene_Switch.instance.switchScene(0);
                 }
             }
 

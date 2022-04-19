@@ -158,7 +158,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: bbb76224658fd954cb97944987bc2520, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -192,12 +192,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b477f875b3268c34d9ac8f928b2804c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 776539745280837939, guid: 35076981bedbbeb48bc296fc66b84452, type: 3}
-  player: {fileID: 2392096887344722130}
   speed: 10
-  Player: {fileID: 2392096887344722126}
   isGrounded: 0
   countText: {fileID: 0}
+  blueText: {fileID: 0}
+  greenText: {fileID: 0}
   winText: {fileID: 0}
   livesText: {fileID: 0}
   gameOverText: {fileID: 0}
@@ -205,8 +204,6 @@ MonoBehaviour:
   fallDepth: 0
   stunTimer: 1
   shockWave: {fileID: 1470851661400135519}
-  spawnedPlayer: 0
-  spawnPoint: {fileID: 0}
 --- !u!136 &2392096887344722127
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -248,6 +245,7 @@ GameObject:
   - component: {fileID: 2392096887345643786}
   - component: {fileID: 2392096887345643781}
   - component: {fileID: 2392096887345643780}
+  - component: {fileID: 8192421275979098521}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -320,6 +318,18 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2392096887345643783}
   m_Enabled: 1
+--- !u!114 &8192421275979098521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2392096887345643783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f89a7e5dbf8ab40bf97f000f266a54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4522613874482394951
 PrefabInstance:
   m_ObjectHideFlags: 0
