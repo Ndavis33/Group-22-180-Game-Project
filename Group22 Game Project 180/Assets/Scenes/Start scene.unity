@@ -318,6 +318,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2392096887344722126, guid: b3fa378cd7a2a404786fc0401de47374, type: 3}
   m_PrefabInstance: {fileID: 2121669421}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &549899016 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1011647330096235354, guid: aed4793993b2b464a88ec8b7c01e2000, type: 3}
+  m_PrefabInstance: {fileID: 2121153743}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &576677066
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,7 +440,7 @@ GameObject:
   - component: {fileID: 732885413}
   - component: {fileID: 732885412}
   m_Layer: 0
-  m_Name: w (4)
+  m_Name: lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -522,7 +533,7 @@ GameObject:
   - component: {fileID: 757063895}
   - component: {fileID: 757063894}
   m_Layer: 0
-  m_Name: w (5)
+  m_Name: lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -615,7 +626,7 @@ GameObject:
   - component: {fileID: 956470280}
   - component: {fileID: 956470279}
   m_Layer: 0
-  m_Name: w (6)
+  m_Name: lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -920,7 +931,7 @@ GameObject:
   - component: {fileID: 1356915622}
   - component: {fileID: 1356915621}
   m_Layer: 0
-  m_Name: w (8)
+  m_Name: lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1018,7 +1029,7 @@ GameObject:
   - component: {fileID: 1489924699}
   - component: {fileID: 1489924698}
   m_Layer: 0
-  m_Name: w (9)
+  m_Name: lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1217,7 +1228,7 @@ GameObject:
   - component: {fileID: 1652306638}
   - component: {fileID: 1652306637}
   m_Layer: 0
-  m_Name: w (7)
+  m_Name: lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1310,7 +1321,7 @@ GameObject:
   - component: {fileID: 1709399248}
   - component: {fileID: 1709399247}
   m_Layer: 0
-  m_Name: w (3)
+  m_Name: Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1403,7 +1414,7 @@ GameObject:
   - component: {fileID: 1773160981}
   - component: {fileID: 1773160980}
   m_Layer: 0
-  m_Name: w (11)
+  m_Name: lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1485,6 +1496,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1801690905 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1011647330698634593, guid: aed4793993b2b464a88ec8b7c01e2000, type: 3}
+  m_PrefabInstance: {fileID: 2121153743}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1928736968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,7 +1518,7 @@ GameObject:
   - component: {fileID: 1928736970}
   - component: {fileID: 1928736969}
   m_Layer: 0
-  m_Name: w (10)
+  m_Name: lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1860,6 +1882,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1011647331965828428, guid: aed4793993b2b464a88ec8b7c01e2000, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011647331965828428, guid: aed4793993b2b464a88ec8b7c01e2000, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9813726
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011647331965828428, guid: aed4793993b2b464a88ec8b7c01e2000, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aed4793993b2b464a88ec8b7c01e2000, type: 3}
 --- !u!1001 &2121669421
@@ -1922,9 +1956,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1600506366}
     - target: {fileID: 2392096887344722131, guid: b3fa378cd7a2a404786fc0401de47374, type: 3}
+      propertyPath: blueText
+      value: 
+      objectReference: {fileID: 1801690905}
+    - target: {fileID: 2392096887344722131, guid: b3fa378cd7a2a404786fc0401de47374, type: 3}
       propertyPath: countText
       value: 
       objectReference: {fileID: 989656467}
+    - target: {fileID: 2392096887344722131, guid: b3fa378cd7a2a404786fc0401de47374, type: 3}
+      propertyPath: greenText
+      value: 
+      objectReference: {fileID: 549899016}
     - target: {fileID: 2392096887344722131, guid: b3fa378cd7a2a404786fc0401de47374, type: 3}
       propertyPath: livesText
       value: 

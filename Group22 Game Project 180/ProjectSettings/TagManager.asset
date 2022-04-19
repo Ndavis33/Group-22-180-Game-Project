@@ -25,6 +25,8 @@ TagManager:
   - Car
   - main
   - Blue Key
+  - Spawner
+  - Red Key
   layers:
   - Default
   - TransparentFX

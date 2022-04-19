@@ -19,10 +19,14 @@ public class PlayerMovement : MonoBehaviour
    
     public bool isGrounded;
     public Text countText;
+    public Text blueText;
+    public Text greenText;
     public Text winText;
     public Text livesText;
     public Text gameOverText;
-    private int count;
+    private int Redkeys;
+    private int Greenkeys;
+    private int Bluekeys;
     public int lives = 3;
     public int fallDepth;
     private Vector3 startPosition;
@@ -38,9 +42,12 @@ public class PlayerMovement : MonoBehaviour
         shockWave.SetActive(false);
         
         rigid_body = GetComponent<Rigidbody>();
-        count = 0;
+        Redkeys = 0;
+        Greenkeys = 0;
+        Bluekeys = 0;
         winText.text = "";
         SetCountText();
+        
        
 
     }
@@ -117,19 +124,19 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Red Key"))
         {
            other.gameObject.SetActive(false);
-            count = count + 1;
+            Redkeys = Redkeys + 1;
             SetCountText();
         }
         if (other.gameObject.CompareTag("Blue Key"))
         {
             other.gameObject.SetActive(false);
-            count = count + 1;
+            Bluekeys = Bluekeys + 1;
             SetCountText();
         }
         if (other.gameObject.CompareTag("Green Key"))
         {
             other.gameObject.SetActive(false);
-            count = count + 1;
+            Greenkeys = Greenkeys + 1;
             SetCountText();
         }
         if (other.gameObject.tag == "Enemy")
@@ -191,7 +198,9 @@ public class PlayerMovement : MonoBehaviour
     // shows the text on the UI
     void SetCountText()
     {
-        countText.text = "Red Key: " + count.ToString();
+        countText.text = "Red Key: " + Redkeys.ToString();
+        blueText.text = "Blue Key: " + Bluekeys.ToString();
+        greenText.text = "Green Key: " + Greenkeys.ToString();
         livesText.text = "Hearts: " +lives.ToString();
 
         if(lives <=0)
@@ -199,13 +208,21 @@ public class PlayerMovement : MonoBehaviour
             gameOverText.text = "GameOver You Lose !";
             speed = 0;
         }
-
-        if(count >= 3)
+ 
+      
+        if(Redkeys >= 1)
         {
-            winText.text = "You Win!";
+            if (Bluekeys >= 1)
+            {
+                if (Greenkeys >=1)
+                {
+                    winText.text = "You Win!";
+                }
+            }
 
         }
     }
+   
 
     //another stun routine?
     IEnumerator Stun()
