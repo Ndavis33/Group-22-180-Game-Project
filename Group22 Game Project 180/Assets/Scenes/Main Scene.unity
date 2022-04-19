@@ -1529,7 +1529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3815412846820389095, guid: 5458116d9779fb04ca8884ab93bbd546, type: 3}
       propertyPath: m_Name
-      value: Boss Scene
+      value: Start Area
       objectReference: {fileID: 0}
     - target: {fileID: 3815412846820389099, guid: 5458116d9779fb04ca8884ab93bbd546, type: 3}
       propertyPath: m_RootOrder

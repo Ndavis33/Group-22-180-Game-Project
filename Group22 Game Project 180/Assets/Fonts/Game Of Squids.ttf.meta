@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 0b14ac06c5bd81441beb5a2aa4a87658
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Game Of Squids
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 43330f7e818cd114691932bfa6a5e04b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
