@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 /*
-*Author:[Davis, Nathan]
+*Authors            :[Davis, Nathan, Stewart, Grant]
 *Date [03/23/2022
-*solves Platfrom1]
+]
 */
 
 
@@ -56,8 +56,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Movejump();
-        // Shoots beam at ground to check if ground is actrually there
-
+       
        
     }
 
@@ -84,6 +83,8 @@ public class PlayerMovement : MonoBehaviour
             add_position += Vector3.back * Time.deltaTime * speed;
         }
       
+
+        // the space button provides the player with a shockwave that can kill enemeys
         if (Input.GetKeyDown("space"))
         {
             StartCoroutine(Shock());
@@ -163,25 +164,25 @@ public class PlayerMovement : MonoBehaviour
         }
         if (other.tag == "main")
         {
-            Scene_Switch.instance.switchScene(0);
+            Scene_Switch.instance.switchScene(1);
 
         }
 
             if (other.tag == "Scene 1")
         {
-            Scene_Switch.instance.switchScene(1);
+            Scene_Switch.instance.switchScene(2);
         }
         if (other.tag == "Scene 2")
         {
-            Scene_Switch.instance.switchScene(2);
+            Scene_Switch.instance.switchScene(3);
         }
         if (other.tag == "Scene 3")
         {
-            Scene_Switch.instance.switchScene(3);
+            Scene_Switch.instance.switchScene(4);
         }
         if (other.tag == "Boss Scene")
         {
-            Scene_Switch.instance.switchScene(4);
+            Scene_Switch.instance.switchScene(0);
         }
 
         if (other.tag == "Trap")
@@ -206,7 +207,7 @@ public class PlayerMovement : MonoBehaviour
         if(lives <=0)
         {
             gameOverText.text = "You Lose !";
-            Scene_Switch.instance.switchScene(4);
+            Scene_Switch.instance.switchScene(1);
           
 
 
@@ -221,7 +222,7 @@ public class PlayerMovement : MonoBehaviour
                 if (Greenkeys >=1)
                 {
                     winText.text = "You Win!";
-                    Scene_Switch.instance.switchScene(0);
+                    Scene_Switch.instance.switchScene(1);
                 }
             }
 
@@ -229,7 +230,7 @@ public class PlayerMovement : MonoBehaviour
     }
    
 
-    //another stun routine?
+    //another stun routine
     IEnumerator Stun()
     {
         int currentPlayerSpeed = speed;
@@ -238,7 +239,7 @@ public class PlayerMovement : MonoBehaviour
         speed = currentPlayerSpeed;
     }
 
-
+    // tells the player that they have been damaged
     public IEnumerator Blink()
     {
         for (int index = 0; index < 30; index++)
