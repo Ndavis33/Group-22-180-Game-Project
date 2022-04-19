@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Laser_Shot : MonoBehaviour
+public class Trap : MonoBehaviour
 {
 public float speed;
 public bool goingLeft;
@@ -22,6 +22,7 @@ public bool goingLeft;
        }
    }
 
+    //despawns traps after despawnTime
     IEnumerator Despawn(float despawnTime)
     {
         yield return new WaitForSeconds(despawnTime);

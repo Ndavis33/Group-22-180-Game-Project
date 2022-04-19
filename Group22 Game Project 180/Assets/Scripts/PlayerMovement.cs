@@ -57,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
  //the Fixed jump moved into its own funtion 
+ //sets movement controls for player
     void Movejump()
     {
         Vector3 add_position = Vector3.zero;
@@ -89,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
             Respawn();
         }
     }
-
+    //sets stun status
     IEnumerator Shock()
     {
         shockWave.SetActive(true);
@@ -97,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
         shockWave.SetActive(false);
     }
 
-    // Respawn function
+    // Respawns player and sets appropriate UI
     private void Respawn()
     {
         transform.position = startPosition;
@@ -111,12 +112,24 @@ public class PlayerMovement : MonoBehaviour
             this.enabled = false;
         }
     }
-   //collider to set game object off
+   //collision events
   void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Pickup"))
+        if (other.gameObject.CompareTag("Red Key"))
         {
            other.gameObject.SetActive(false);
+            count = count + 1;
+            SetCountText();
+        }
+        if (other.gameObject.CompareTag("Blue Key"))
+        {
+            other.gameObject.SetActive(false);
+            count = count + 1;
+            SetCountText();
+        }
+        if (other.gameObject.CompareTag("Green Key"))
+        {
+            other.gameObject.SetActive(false);
             count = count + 1;
             SetCountText();
         }
@@ -188,15 +201,17 @@ public class PlayerMovement : MonoBehaviour
         if(lives <=0)
         {
             gameOverText.text = "GameOver You Lose !";
+            speed = 0;
         }
 
-        if(count >= 6)
+        if(count >= 3)
         {
             winText.text = "You Win!";
 
         }
     }
 
+    //another stun routine?
     IEnumerator Stun()
     {
         int currentPlayerSpeed = speed;

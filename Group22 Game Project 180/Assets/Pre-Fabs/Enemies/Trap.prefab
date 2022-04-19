@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8134737211755473756}
   - component: {fileID: 8134737211755473757}
   - component: {fileID: 8134737211755473758}
-  - component: {fileID: 3563293224952579897}
+  - component: {fileID: 4200966653137194592}
   m_Layer: 0
   m_Name: Trap
   m_TagString: Trap
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 8134737211755473752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.404, y: 1.64, z: 2.636}
-  m_LocalScale: {x: 0.37236226, y: 0.07865574, z: 0.04560513}
+  m_LocalScale: {x: 0.09140377, y: 0.07865574, z: 0.04560513}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -97,7 +97,7 @@ CapsuleCollider:
   m_Height: 1.0000001
   m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3563293224952579897
+--- !u!114 &4200966653137194592
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

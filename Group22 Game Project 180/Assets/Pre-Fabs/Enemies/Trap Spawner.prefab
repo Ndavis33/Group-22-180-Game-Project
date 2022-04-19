@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1048443007883190248}
   - component: {fileID: 1048443007883190263}
   - component: {fileID: 1048443007883190262}
-  - component: {fileID: 3673312659962733988}
+  - component: {fileID: 8312070335250943063}
   m_Layer: 0
   m_Name: Trap Spawner
   m_TagString: Untagged
@@ -97,7 +97,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &3673312659962733988
+--- !u!114 &8312070335250943063
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 878d9662d22e70f4b9b7e500bbb2a400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goingLeft: 0
-  timeBetweenShots: 0
+  goingLeft: 1
+  timeBetweenShots: 1.5
   startDelay: 0
-  Laser_PreFab: {fileID: 0}
+  Trap_PreFab: {fileID: 8134737211755473752, guid: 6fdfbab649456ee4abf7288d3247c0ff, type: 3}
