@@ -619,6 +619,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1252150565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1513170497903503438, guid: f911835c08a313d4c92dedfe28c073af, type: 3}
+  m_PrefabInstance: {fileID: 1651984110}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1345660174
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,6 +1732,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1157794697}
     - target: {fileID: 5069439882500687648, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
+      propertyPath: stunTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5069439882500687648, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1252150565}
+    - target: {fileID: 5069439882500687648, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
       propertyPath: gameOverText
       value: 
       objectReference: {fileID: 219287051}
@@ -1736,7 +1749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5069439882500687649, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 5069439882500687649, guid: d700478a1bfdfcf4caa0f6595e3fbb9e, type: 3}
       propertyPath: m_LocalPosition.y

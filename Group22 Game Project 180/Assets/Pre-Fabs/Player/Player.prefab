@@ -194,6 +194,8 @@ MonoBehaviour:
   fallDepth: 0
   stunTimer: 0
   shockWave: {fileID: 8287089559701119148}
+  spawnedPlayer: 0
+  spawnPoint: {fileID: 0}
 --- !u!136 &5069439882500687676
 CapsuleCollider:
   m_ObjectHideFlags: 0
