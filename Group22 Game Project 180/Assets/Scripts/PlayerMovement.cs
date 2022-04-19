@@ -12,12 +12,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-  [SerializeField] private Transform respawnPoint;
-    [SerializeField] private Transform player;
+ 
 
     public int speed = 1;
     private Rigidbody rigid_body;
-    public GameObject Player;
+   
     public bool isGrounded;
     public Text countText;
     public Text winText;
@@ -29,8 +28,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 startPosition;
     public float stunTimer;
     public GameObject shockWave;
-    public bool spawnedPlayer;
-    public GameObject spawnPoint;
+   
 
 
 
@@ -38,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     { 
         shockWave.SetActive(false);
-        startPosition = spawnPoint.transform.position;
+        
         rigid_body = GetComponent<Rigidbody>();
         count = 0;
         winText.text = "";
@@ -100,13 +98,14 @@ public class PlayerMovement : MonoBehaviour
     // Respawn function
     private void Respawn()
     {
+
         transform.position = startPosition;
-
-
+        GetComponent<Transform>().position = GameObject.FindGameObjectWithTag("Spawner").transform.position;
+        StartCoroutine(Blink());
         lives--;
         SetCountText();
 
-        if(lives <=0)
+        if (lives <= 0)
         {
             this.enabled = false;
         }
@@ -145,9 +144,6 @@ public class PlayerMovement : MonoBehaviour
         if (other.tag == "main")
         {
             Scene_Switch.instance.switchScene(0);
-            GameObject.FindGameObjectWithTag("Player").SetActive(false);
-
-
 
         }
 
@@ -206,8 +202,23 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+    public IEnumerator Blink()
+    {
+        for (int index = 0; index < 30; index++)
+        {
+            if (index % 2 == 0)
+            {
+                GetComponent<MeshRenderer>().enabled = false;
+            }
+            else
+            {
+                GetComponent<MeshRenderer>().enabled = true;
+            }
+            yield return new WaitForSeconds(.1f);
+        }
+        GetComponent<MeshRenderer>().enabled = true;
+    }
 
 
-   
 
 }

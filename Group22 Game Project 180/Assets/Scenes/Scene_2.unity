@@ -273,6 +273,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3788648415924483058, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 274732469}
     - target: {fileID: 5059187661336764540, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.4
@@ -813,6 +817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 3788648415924483058, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 274732469}
     - target: {fileID: 5059187661336764540, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.4
@@ -834,6 +842,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 1513170497903503438, guid: f911835c08a313d4c92dedfe28c073af, type: 3}
+      propertyPath: m_TagString
+      value: Spawner
+      objectReference: {fileID: 0}
     - target: {fileID: 4178999690148558021, guid: f911835c08a313d4c92dedfe28c073af, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -844,11 +856,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4178999690148558021, guid: f911835c08a313d4c92dedfe28c073af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.6
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4178999690148558021, guid: f911835c08a313d4c92dedfe28c073af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -65.59
+      value: -65.5
       objectReference: {fileID: 0}
     - target: {fileID: 4178999690148558021, guid: f911835c08a313d4c92dedfe28c073af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -880,6 +892,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f911835c08a313d4c92dedfe28c073af, type: 3}
+--- !u!4 &274732469 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4178999690148558021, guid: f911835c08a313d4c92dedfe28c073af, type: 3}
+  m_PrefabInstance: {fileID: 274732468}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &303226455
 GameObject:
   m_ObjectHideFlags: 0
@@ -2075,6 +2092,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 3788648415924483058, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 274732469}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
 --- !u!1 &737224144
@@ -2227,6 +2248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3788648415924483058, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 274732469}
     - target: {fileID: 5059187661336764540, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.2
@@ -2292,6 +2317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3788648415924483058, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 274732469}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
 --- !u!1 &808313496
@@ -2899,6 +2928,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3788648415924483058, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 274732469}
     - target: {fileID: 5059187661336764540, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.2
@@ -3342,6 +3375,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3788648415924483058, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 274732469}
     - target: {fileID: 5059187661336764540, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.2
@@ -3692,6 +3729,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3788648415924483058, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 274732469}
     - target: {fileID: 5059187661336764540, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.4
@@ -4042,6 +4083,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 3788648415924483058, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 274732469}
     - target: {fileID: 5059187661336764540, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.4
@@ -4297,6 +4342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3788648415924483058, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 274732469}
     - target: {fileID: 5059187661336764540, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.4
@@ -5312,6 +5361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3788648415924483058, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 274732469}
     - target: {fileID: 5059187661336764540, guid: 8e100cf144d912f40853cc4d6b9b6452, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.4
@@ -5417,63 +5470,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088512034}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &776539745552849043
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 776539745280837900, guid: 35076981bedbbeb48bc296fc66b84452, type: 3}
-      propertyPath: m_Name
-      value: RespawnPoint1
-      objectReference: {fileID: 0}
-    - target: {fileID: 776539745280837939, guid: 35076981bedbbeb48bc296fc66b84452, type: 3}
-      propertyPath: m_RootOrder
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 776539745280837939, guid: 35076981bedbbeb48bc296fc66b84452, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 776539745280837939, guid: 35076981bedbbeb48bc296fc66b84452, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.68
-      objectReference: {fileID: 0}
-    - target: {fileID: 776539745280837939, guid: 35076981bedbbeb48bc296fc66b84452, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -65.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 776539745280837939, guid: 35076981bedbbeb48bc296fc66b84452, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 776539745280837939, guid: 35076981bedbbeb48bc296fc66b84452, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 776539745280837939, guid: 35076981bedbbeb48bc296fc66b84452, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 776539745280837939, guid: 35076981bedbbeb48bc296fc66b84452, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 776539745280837939, guid: 35076981bedbbeb48bc296fc66b84452, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 776539745280837939, guid: 35076981bedbbeb48bc296fc66b84452, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 776539745280837939, guid: 35076981bedbbeb48bc296fc66b84452, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 35076981bedbbeb48bc296fc66b84452, type: 3}
 --- !u!1001 &8902528480786602054
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -24,6 +24,7 @@ TagManager:
   - Trap
   - Car
   - main
+  - Spawner
   layers:
   - Default
   - TransparentFX
