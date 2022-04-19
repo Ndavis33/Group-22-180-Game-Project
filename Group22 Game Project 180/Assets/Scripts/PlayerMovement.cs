@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     public float stunTimer;
     public GameObject shockWave;
     public bool spawnedPlayer;
+    public GameObject spawnPoint;
 
 
 
@@ -37,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     { 
         shockWave.SetActive(false);
-        startPosition = transform.position;
+        startPosition = spawnPoint.transform.position;
         rigid_body = GetComponent<Rigidbody>();
         count = 0;
         winText.text = "";
@@ -99,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
     // Respawn function
     private void Respawn()
     {
-        player.transform.position = respawnPoint.transform.position;
+        transform.position = startPosition;
 
 
         lives--;
@@ -199,7 +200,7 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator Stun()
     {
         int currentPlayerSpeed = speed;
-        speed = 1;
+        speed = 0;
             yield return new WaitForSeconds(stunTimer);
         speed = currentPlayerSpeed;
     }
