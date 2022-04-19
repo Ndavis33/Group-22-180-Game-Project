@@ -207,11 +207,9 @@ public class PlayerMovement : MonoBehaviour
         if(lives <=0)
         {
             gameOverText.text = "You Lose !";
+            speed = 0;
             Scene_Switch.instance.switchScene(1);
           
-
-
-            speed = 0;
         }
  
       
